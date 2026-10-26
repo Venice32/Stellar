@@ -6,20 +6,28 @@
   <meta name="theme-color" content="#111827">
   <title>Stellar — Collection audio</title>
   <style>
-    :root { color-scheme: dark; --bg:#0b1020; --text:#f4f6fb; --muted:#a9b4ca; --accent:#b5a7ff; }
+    :root { color-scheme: dark; --text:#f4f6fb; --muted:#e0e5f2; --accent:#c5b8ff; }
     * { box-sizing: border-box; }
-    body { margin:0; min-height:100vh; background:radial-gradient(ellipse at top,#222b4a 0%,var(--bg) 55%); color:var(--text); font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; padding:32px 16px; }
+    body {
+      margin:0; min-height:100vh; color:var(--text);
+      background:
+        linear-gradient(rgba(5,8,18,.48), rgba(5,8,18,.68)),
+        url("fond.jpg") center center / cover fixed no-repeat,
+        #0b1020;
+      font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; padding:32px 16px;
+    }
     main { max-width:760px; margin:auto; }
     .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; font-weight:700; }
-    h1 { margin:.25rem 0 .5rem; font-size:clamp(2rem,6vw,3.4rem); line-height:1.08; }
-    .intro { color:var(--muted); margin:0 0 28px; }
-    .track { background:rgba(21,29,50,.94); border:1px solid #303b58; border-radius:18px; padding:18px; margin:14px 0; box-shadow:0 10px 30px #0002; }
+    h1 { margin:.25rem 0 .5rem; font-size:clamp(2rem,6vw,3.4rem); line-height:1.08; text-shadow:0 2px 16px #000; }
+    .intro { color:var(--muted); margin:0 0 28px; text-shadow:0 2px 8px #000; }
+    .track { background:rgba(13,19,36,.88); backdrop-filter:blur(8px); border:1px solid rgba(202,210,239,.24); border-radius:18px; padding:18px; margin:14px 0; box-shadow:0 10px 30px #0005; }
     .track-head { display:flex; align-items:center; gap:14px; margin-bottom:12px; }
     .num { flex:none; width:42px; height:42px; display:grid; place-items:center; background:#292747; color:var(--accent); border-radius:13px; font-weight:800; }
     h2 { font-size:1.05rem; margin:0; }
     .sub { color:var(--muted); font-size:.85rem; }
     audio { display:block; width:100%; height:42px; }
-    footer { color:var(--muted); font-size:.82rem; margin-top:28px; text-align:center; }
+    footer { color:var(--muted); font-size:.82rem; margin-top:28px; text-align:center; text-shadow:0 2px 8px #000; }
+    @media (max-width:600px) { body { padding:24px 12px; background-attachment:scroll; } .track { padding:15px; } }
   </style>
 </head>
 <body>
