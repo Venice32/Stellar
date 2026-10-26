@@ -11,14 +11,14 @@
     body {
       margin:0; min-height:100vh; color:var(--text);
       background-color:#0b1020;
-      background-image:linear-gradient(rgba(5,8,18,.16), rgba(5,8,18,.30)), url("/Stellar/54c95e9e-d925-4df4-9267-607f5f5e5cfd.png");
-      background-position:left top;
-      background-size:auto 100vh;
+      background-image:linear-gradient(rgba(5,8,18,.25), rgba(5,8,18,.36)), url("/Stellar/eglise-stellar.png");
+      background-position:center center;
+      background-size:cover;
       background-repeat:no-repeat;
       background-attachment:fixed;
       font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; padding:32px 16px;
     }
-    main { width:min(760px, 100%); margin-left:clamp(340px, 40vw, 620px); margin-right:16px; }
+    main { width:min(760px, calc(100% - 16px)); margin-left:clamp(340px, 26vw, 620px); margin-right:16px; }
     .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; font-weight:700; text-shadow:0 2px 8px #000; }
     h1 { margin:.25rem 0 .5rem; font-size:clamp(2rem,6vw,3.4rem); line-height:1.08; text-shadow:0 2px 16px #000; }
     .intro { color:var(--muted); margin:0 0 28px; text-shadow:0 2px 8px #000; }
@@ -30,7 +30,7 @@
     audio { display:block; width:100%; height:42px; }
     footer { color:var(--muted); font-size:.82rem; margin-top:28px; text-align:center; text-shadow:0 2px 8px #000; }
     @media (max-width:900px) {
-      body { padding:24px 12px; background-attachment:scroll; background-size:auto 72vh; background-position:left top; }
+      body { padding:24px 12px; background-attachment:scroll; background-size:auto 100vh; background-position:center top; }
       main { width:100%; max-width:760px; margin:0 auto; }
       .track { padding:15px; }
     }
