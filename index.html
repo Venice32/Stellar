@@ -11,9 +11,9 @@
     body {
       margin:0; min-height:100vh; color:var(--text);
       background-color:#0b1020;
-      background-image:linear-gradient(rgba(5,8,18,.30), rgba(5,8,18,.48)), url("/Stellar/54c95e9e-d925-4df4-9267-607f5f5e5cfd.png");
-      background-position:center top;
-      background-size:cover;
+      background-image:linear-gradient(rgba(5,8,18,.22), rgba(5,8,18,.38)), url("/Stellar/54c95e9e-d925-4df4-9267-607f5f5e5cfd.png");
+      background-position:left top;
+      background-size:auto 100vh;
       background-repeat:no-repeat;
       background-attachment:fixed;
       font:16px/1.5 system-ui,-apple-system,Segoe UI,sans-serif; padding:32px 16px;
@@ -29,7 +29,10 @@
     .sub { color:var(--muted); font-size:.85rem; }
     audio { display:block; width:100%; height:42px; }
     footer { color:var(--muted); font-size:.82rem; margin-top:28px; text-align:center; text-shadow:0 2px 8px #000; }
-    @media (max-width:600px) { body { padding:24px 12px; background-attachment:scroll; background-position:35% top; } .track { padding:15px; } }
+    @media (max-width:600px) {
+      body { padding:24px 12px; background-attachment:scroll; background-size:100% auto; background-position:center top; }
+      .track { padding:15px; }
+    }
   </style>
 </head>
 <body>
